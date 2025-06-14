@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, computed, input} from '@angular/core';
 import {CellCoordinates} from '../../models/cell-coordinates';
 import {CellState} from '../../models/cell-state';
 import {InteractableCellComponent} from './interactable-cell/interactable-cell.component';

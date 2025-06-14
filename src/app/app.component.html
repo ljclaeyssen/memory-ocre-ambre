@@ -1,15 +1,10 @@
-<div class="card">
-  <p-toolbar [style]="{ 'border-radius': '3rem', 'padding': '1rem 1rem 1rem 1.5rem' }">
-    <ng-template #start>
-      <img src="https://api.dofusdb.fr/img/items/23012.png" class="logo">
-      <div>
-        Memory Ocre d'ambre
-      </div>
+<p-button label="Informations" [raised]="true" severity="secondary" (click)="showDialog()" />
 
-      <p-button label="Memory" text color="secondary" routerLink="/play" />
-      <p-button label="Infos" text color="secondary" routerLink="/info"/>
-    </ng-template>
-  </p-toolbar>
-</div>
+<app-ocre-memory></app-ocre-memory>
 
-<router-outlet></router-outlet>
+
+
+
+<p-dialog header="Informations" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+<app-infos></app-infos>
+</p-dialog>

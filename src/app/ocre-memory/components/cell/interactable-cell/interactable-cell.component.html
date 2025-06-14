@@ -19,6 +19,16 @@
     @case (CellContent.CLEARED) {
       <div class="textual-content cleared"> ✓</div>
     }
+    @case (CellContent.NOTHING) {
+      @switch (specialDisplay()) {
+        @case (SpecialCellDisplay.Eye) {
+          <div class="textual-content">👁</div>
+        }
+        @case (SpecialCellDisplay.Cross) {
+          <div class="textual-content">⛌</div>
+        }
+      }
+    }
   }
 </div>
 
