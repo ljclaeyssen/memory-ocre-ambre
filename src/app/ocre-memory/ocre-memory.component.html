@@ -1,0 +1,12 @@
+<div class="map-container">
+  <div class="map">
+    @for(row of memoryMap; track row; let r = $index){
+      <div class="row">
+        @for(cell of row; track $index; let i = $index){
+          <app-cell [cellState]="cell" [coordinates]="{x: i, y: r}"></app-cell>
+        }
+      </div>
+    }
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+@switch (cellState()) {
+  @case (CellState.WALKABLE) {
+    <app-interactable-cell [coordinates]="coordinates()"></app-interactable-cell>
+  }
+  @case(CellState.WALL) {
+    <app-wall-cell></app-wall-cell>
+  }
+  @case (CellState.VOID){
+    <app-void-cell></app-void-cell>
+  }
+}

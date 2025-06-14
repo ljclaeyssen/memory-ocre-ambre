@@ -1,0 +1,7 @@
+img {
+  width: 150%;
+  margin-top: -50%;
+  margin-left: -50%;
+  pointer-events: none;
+  position: relative;
+}

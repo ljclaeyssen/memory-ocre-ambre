@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid grey;
+
+  background-color: #FE9737;
+
+  .trigger {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.dark {
+    background-color: #FA6F1E;
+  }
+
+  &.unknown {
+    background-color: #CBF29F;
+  }
+
+  &.cleared {
+    background-color: purple;
+  }
+
+  &.mob {
+    background-color: red;
+  }
+
+  img {
+    width: 170%;
+    margin-top: -60%;
+    margin-left: -60%;
+    pointer-events: none;
+    transform: rotate(-45deg) scaleY(1.35);
+
+    &.malepik {
+      width: 250%;
+      margin-top: -130%;
+      margin-left: -120%;
+
+    }
+  }
+
+  .textual-content {
+    transform: rotate(-45deg);
+    font-size: 170%;
+    margin-top: 15%;
+  }
+}
