@@ -1,8 +1,5 @@
 import {Component, HostBinding, input, signal} from '@angular/core';
-import {ButtonDirective} from "primeng/button";
-import {InputGroup} from "primeng/inputgroup";
-import {InputGroupAddon} from "primeng/inputgroupaddon";
-import {InputText} from "primeng/inputtext";
+import {Button} from "primeng/button";
 import {Popover} from "primeng/popover";
 import {CellContent} from '../../../models/cell-content';
 import {CellCoordinates} from '../../../models/cell-coordinates';
@@ -11,10 +8,7 @@ import {CellCoordinates} from '../../../models/cell-coordinates';
   selector: 'app-interactable-cell',
   imports: [
     Popover,
-    InputGroup,
-    InputText,
-    InputGroupAddon,
-    ButtonDirective
+    Button
   ],
   templateUrl: './interactable-cell.component.html',
   styleUrl: './interactable-cell.component.css'
